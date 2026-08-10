@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 128,
+    "width": 768,
+    "height": 1024,
+    "isRotated": false,
+    "originalWidth": 1024,
+    "originalHeight": 1024
+  },
+  "imagePath": "image-targets/QRLogoFV_luminance.png",
+  "metadata": null,
+  "name": "QRLogoFV",
+  "resources": {
+    "originalImage": "QRLogoFV_original.png",
+    "croppedImage": "QRLogoFV_cropped.png",
+    "thumbnailImage": "QRLogoFV_thumbnail.png",
+    "luminanceImage": "QRLogoFV_luminance.png"
+  },
+  "created": 1786376975638,
+  "updated": 1786376975638
+}
