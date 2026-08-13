@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 834,
+    "width": 1152,
+    "height": 1536,
+    "isRotated": false,
+    "originalWidth": 2816,
+    "originalHeight": 1536
+  },
+  "imagePath": "image-targets/ing_luminance.png",
+  "metadata": null,
+  "name": "ing",
+  "resources": {
+    "originalImage": "ing_original.png",
+    "croppedImage": "ing_cropped.png",
+    "thumbnailImage": "ing_thumbnail.png",
+    "luminanceImage": "ing_luminance.png"
+  },
+  "created": 1786633887653,
+  "updated": 1786633990612
+}
