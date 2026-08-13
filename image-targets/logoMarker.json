@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 6,
+    "left": 0,
+    "width": 800,
+    "height": 1066,
+    "isRotated": true,
+    "originalWidth": 800,
+    "originalHeight": 1080
+  },
+  "imagePath": "image-targets/logoMarker_luminance.png",
+  "metadata": null,
+  "name": "logoMarker",
+  "resources": {
+    "originalImage": "logoMarker_original.png",
+    "croppedImage": "logoMarker_cropped.png",
+    "thumbnailImage": "logoMarker_thumbnail.png",
+    "luminanceImage": "logoMarker_luminance.png"
+  },
+  "created": 1786636029240,
+  "updated": 1786636029240
+}
