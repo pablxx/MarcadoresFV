@@ -1,13 +1,13 @@
 {
   "type": "PLANAR",
   "properties": {
-    "top": 208,
-    "left": 656,
-    "width": 1487,
-    "height": 1983,
-    "isRotated": false,
-    "originalWidth": 2800,
-    "originalHeight": 2400
+    "top": 0,
+    "left": 153,
+    "width": 2100,
+    "height": 2800,
+    "isRotated": true,
+    "originalWidth": 2400,
+    "originalHeight": 2800
   },
   "imagePath": "image-targets/cpu_luminance.jpg",
   "metadata": null,
@@ -19,5 +19,5 @@
     "luminanceImage": "cpu_luminance.jpg"
   },
   "created": 1786819885785,
-  "updated": 1786819897524
+  "updated": 1786834591489
 }
