@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 453,
+    "left": 840,
+    "width": 1121,
+    "height": 1494,
+    "isRotated": false,
+    "originalWidth": 2800,
+    "originalHeight": 2400
+  },
+  "imagePath": "image-targets/cpuSM_luminance.jpg",
+  "metadata": null,
+  "name": "cpuSM",
+  "resources": {
+    "originalImage": "cpuSM_original.jpg",
+    "croppedImage": "cpuSM_cropped.jpg",
+    "thumbnailImage": "cpuSM_thumbnail.jpg",
+    "luminanceImage": "cpuSM_luminance.jpg"
+  },
+  "created": 1786832680403,
+  "updated": 1786832691428
+}
