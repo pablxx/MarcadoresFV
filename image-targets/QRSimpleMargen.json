@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 171,
+    "left": 256,
+    "width": 512,
+    "height": 683,
+    "isRotated": false,
+    "originalWidth": 1024,
+    "originalHeight": 1024
+  },
+  "imagePath": "image-targets/QRSimpleMargen_luminance.jpg",
+  "metadata": null,
+  "name": "QRSimpleMargen",
+  "resources": {
+    "originalImage": "QRSimpleMargen_original.jpg",
+    "croppedImage": "QRSimpleMargen_cropped.jpg",
+    "thumbnailImage": "QRSimpleMargen_thumbnail.jpg",
+    "luminanceImage": "QRSimpleMargen_luminance.jpg"
+  },
+  "created": 1786752208383,
+  "updated": 1786752226166
+}
