@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 173,
+    "width": 1050,
+    "height": 1400,
+    "isRotated": true,
+    "originalWidth": 1396,
+    "originalHeight": 1400
+  },
+  "imagePath": "image-targets/T2_luminance.png",
+  "metadata": null,
+  "name": "T2",
+  "resources": {
+    "originalImage": "T2_original.png",
+    "croppedImage": "T2_cropped.png",
+    "thumbnailImage": "T2_thumbnail.png",
+    "luminanceImage": "T2_luminance.png"
+  },
+  "created": 1787709173332,
+  "updated": 1787709173332
+}
