@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 160,
+    "width": 960,
+    "height": 1280,
+    "isRotated": false,
+    "originalWidth": 1280,
+    "originalHeight": 1280
+  },
+  "imagePath": "image-targets/T3_luminance.jpg",
+  "metadata": null,
+  "name": "T3",
+  "resources": {
+    "originalImage": "T3_original.jpg",
+    "croppedImage": "T3_cropped.jpg",
+    "thumbnailImage": "T3_thumbnail.jpg",
+    "luminanceImage": "T3_luminance.jpg"
+  },
+  "created": 1787754139655,
+  "updated": 1787754139655
+}

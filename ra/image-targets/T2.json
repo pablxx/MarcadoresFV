@@ -2,22 +2,22 @@
   "type": "PLANAR",
   "properties": {
     "top": 0,
-    "left": 173,
-    "width": 1050,
-    "height": 1400,
-    "isRotated": true,
-    "originalWidth": 1396,
-    "originalHeight": 1400
+    "left": 100,
+    "width": 600,
+    "height": 800,
+    "isRotated": false,
+    "originalWidth": 800,
+    "originalHeight": 800
   },
-  "imagePath": "image-targets/T2_luminance.png",
+  "imagePath": "image-targets/T2_luminance.jpg",
   "metadata": null,
   "name": "T2",
   "resources": {
-    "originalImage": "T2_original.png",
-    "croppedImage": "T2_cropped.png",
-    "thumbnailImage": "T2_thumbnail.png",
-    "luminanceImage": "T2_luminance.png"
+    "originalImage": "T2_original.jpg",
+    "croppedImage": "T2_cropped.jpg",
+    "thumbnailImage": "T2_thumbnail.jpg",
+    "luminanceImage": "T2_luminance.jpg"
   },
-  "created": 1787709173332,
-  "updated": 1787709173332
+  "created": 1787754711079,
+  "updated": 1787754711079
 }
