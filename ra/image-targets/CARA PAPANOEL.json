@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 25,
+    "width": 750,
+    "height": 1000,
+    "isRotated": true,
+    "originalWidth": 800,
+    "originalHeight": 1000
+  },
+  "imagePath": "image-targets/CARA PAPANOEL_luminance.png",
+  "metadata": null,
+  "name": "CARA PAPANOEL",
+  "resources": {
+    "originalImage": "CARA PAPANOEL_original.png",
+    "croppedImage": "CARA PAPANOEL_cropped.png",
+    "thumbnailImage": "CARA PAPANOEL_thumbnail.png",
+    "luminanceImage": "CARA PAPANOEL_luminance.png"
+  },
+  "created": 1788891362818,
+  "updated": 1788891362818
+}
