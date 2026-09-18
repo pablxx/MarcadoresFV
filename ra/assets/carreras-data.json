@@ -1,0 +1,36 @@
+{
+  "med": {
+    "nombreCarrera": "Medicina (USFX)",
+    "puntos": [
+      {
+        "id": "med_p1",
+        "label": "🫀 Aurícula",
+        "titulo": "Aurícula Derecha",
+        "descripcion": "Recibe la sangre baja en oxígeno de todo el cuerpo a través de las venas cavas."
+      },
+      {
+        "id": "med_p2",
+        "label": "🫀 Ventrículo",
+        "titulo": "Ventrículo Izquierdo",
+        "descripcion": "Es la cámara de bombeo más fuerte; impulsa la sangre oxigenada hacia la aorta."
+      }
+    ]
+  },
+  "T1": {
+    "nombreCarrera": "Enfermería (USFX)",
+    "puntos": [
+      {
+        "id": "enf_p1",
+        "label": "💧 Suero",
+        "titulo": "Bolsa de Solución IV",
+        "descripcion": "Administra hidratación o fármacos directo al torrente sanguíneo."
+      },
+      {
+        "id": "enf_p2",
+        "label": "⏱️ Gotero",
+        "titulo": "Cámara de Goteo",
+        "descripcion": "Permite controlar y contar visualmente la velocidad del goteo por minuto."
+      }
+    ]
+  }
+}

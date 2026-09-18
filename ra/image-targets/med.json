@@ -2,12 +2,12 @@
   "type": "PLANAR",
   "properties": {
     "top": 0,
-    "left": 256,
-    "width": 1536,
-    "height": 2048,
+    "left": 118,
+    "width": 629,
+    "height": 838,
     "isRotated": false,
-    "originalWidth": 2048,
-    "originalHeight": 2048
+    "originalWidth": 865,
+    "originalHeight": 838
   },
   "imagePath": "image-targets/med_luminance.png",
   "metadata": null,
@@ -18,6 +18,6 @@
     "thumbnailImage": "med_thumbnail.png",
     "luminanceImage": "med_luminance.png"
   },
-  "created": 1786564316243,
-  "updated": 1786564316243
+  "created": 1789760091014,
+  "updated": 1789760211285
 }

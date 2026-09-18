@@ -1,1 +1,29 @@
-<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Image Targets</title><meta itemprop="name" content="Image Targets"><meta name="twitter:title" content="Image Targets"><meta property="og:title" content="Image Targets"><meta property="og:site_name" content="Image Targets"><meta name="description" content="This project demonstrates how to use Image Targets to anchor virtual content to images in the real world."><meta itemprop="description" content="This project demonstrates how to use Image Targets to anchor virtual content to images in the real world."><meta property="og:description" content="This project demonstrates how to use Image Targets to anchor virtual content to images in the real world."><meta name="twitter:description" content="This project demonstrates how to use Image Targets to anchor virtual content to images in the real world."><script crossorigin="anonymous" src="./external/runtime/runtime.js"></script><script src="https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@1/dist/xr.js" async crossorigin="anonymous" data-preload-chunks="slam"></script><script src="https://cdn.jsdelivr.net/npm/@8thwall/landing-page@1/dist/landing-page.js" crossorigin="anonymous"></script><meta property="og:image" content="https://8thwall.org/studio-image-targets-example/assets/preview.png"></head><body><script src="bundle.js"></script></body></html>
+<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1"><title>USFX Salud - Realidad Aumentada</title><script crossorigin="anonymous" src="./external/runtime/runtime.js"></script><script src="https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@1/dist/xr.js" async crossorigin="anonymous" data-preload-chunks="slam"></script><script src="https://cdn.jsdelivr.net/npm/@8thwall/landing-page@1/dist/landing-page.js" crossorigin="anonymous"></script><script src="https://cloudflare.com"></script><style>#ar-ui {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      max-width: 400px;
+      background: rgba(15, 23, 42, 0.9); /* Un tono oscuro elegante */
+      color: #f8fafc;
+      font-family: system-ui, -apple-system, sans-serif;
+      padding: 18px;
+      border-radius: 16px;
+      text-align: left;
+      display: none; /* Se activa solo al tocar un hotspot */
+      z-index: 9999;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    #ar-ui h3 {
+      margin: 0 0 6px 0;
+      color: #38bdf8; /* Celeste llamativo para el título */
+      font-size: 18px;
+    }
+    #ar-ui p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #cbd5e1;
+    }</style></head><body><div id="hotspots-container" style="position: absolute; top: 15%; left: 50%; transform: translateX(-50%); z-index: 9999; display: flex; gap: 10px; justify-content: center; width: 90%; flex-wrap: wrap;"></div><div id="ar-ui" style="display: none; position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); z-index: 9999; background: rgba(15, 23, 42, 0.9); color: #f8fafc; font-family: system-ui, sans-serif; padding: 18px; border-radius: 16px; width: 80%; max-width: 400px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);"><h3 id="ui-title" style="margin: 0 0 6px 0; color: #38bdf8; font-size: 18px;"></h3><p id="ui-desc" style="margin: 0; font-size: 14px; line-height: 1.5; color: #cbd5e1;"></p></div><script src="bundle.js"></script></body></html>
