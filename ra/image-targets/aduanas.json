@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/aduanas_luminance.png",
+  "metadata": null,
+  "name": "aduanas",
+  "resources": {
+    "originalImage": "aduanas_original.png",
+    "croppedImage": "aduanas_cropped.png",
+    "thumbnailImage": "aduanas_thumbnail.png",
+    "luminanceImage": "aduanas_luminance.png"
+  },
+  "created": 1790098586791,
+  "updated": 1790098586791
+}

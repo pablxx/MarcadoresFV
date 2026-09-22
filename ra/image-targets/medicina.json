@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/medicina_luminance.png",
+  "metadata": null,
+  "name": "medicina",
+  "resources": {
+    "originalImage": "medicina_original.png",
+    "croppedImage": "medicina_cropped.png",
+    "thumbnailImage": "medicina_thumbnail.png",
+    "luminanceImage": "medicina_luminance.png"
+  },
+  "created": 1790099467224,
+  "updated": 1790099467224
+}
