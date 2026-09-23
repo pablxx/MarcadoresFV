@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/economia_luminance.png",
+  "metadata": null,
+  "name": "economia",
+  "resources": {
+    "originalImage": "economia_original.png",
+    "croppedImage": "economia_cropped.png",
+    "thumbnailImage": "economia_thumbnail.png",
+    "luminanceImage": "economia_luminance.png"
+  },
+  "created": 1790139201490,
+  "updated": 1790139201490
+}

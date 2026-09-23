@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/arquitectura_luminance.png",
+  "metadata": null,
+  "name": "arquitectura",
+  "resources": {
+    "originalImage": "arquitectura_original.png",
+    "croppedImage": "arquitectura_cropped.png",
+    "thumbnailImage": "arquitectura_thumbnail.png",
+    "luminanceImage": "arquitectura_luminance.png"
+  },
+  "created": 1790138983697,
+  "updated": 1790138983697
+}

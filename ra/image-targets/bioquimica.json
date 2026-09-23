@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/bioquimica_luminance.png",
+  "metadata": null,
+  "name": "bioquimica",
+  "resources": {
+    "originalImage": "bioquimica_original.png",
+    "croppedImage": "bioquimica_cropped.png",
+    "thumbnailImage": "bioquimica_thumbnail.png",
+    "luminanceImage": "bioquimica_luminance.png"
+  },
+  "created": 1790139028061,
+  "updated": 1790139028061
+}

@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/turismo_luminance.png",
+  "metadata": null,
+  "name": "turismo",
+  "resources": {
+    "originalImage": "turismo_original.png",
+    "croppedImage": "turismo_cropped.png",
+    "thumbnailImage": "turismo_thumbnail.png",
+    "luminanceImage": "turismo_luminance.png"
+  },
+  "created": 1790139518498,
+  "updated": 1790139518498
+}

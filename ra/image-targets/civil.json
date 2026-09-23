@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/civil_luminance.png",
+  "metadata": null,
+  "name": "civil",
+  "resources": {
+    "originalImage": "civil_original.png",
+    "croppedImage": "civil_cropped.png",
+    "thumbnailImage": "civil_thumbnail.png",
+    "luminanceImage": "civil_luminance.png"
+  },
+  "created": 1790139047730,
+  "updated": 1790139047730
+}

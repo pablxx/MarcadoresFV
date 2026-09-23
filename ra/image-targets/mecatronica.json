@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/mecatronica_luminance.png",
+  "metadata": null,
+  "name": "mecatronica",
+  "resources": {
+    "originalImage": "mecatronica_original.png",
+    "croppedImage": "mecatronica_cropped.png",
+    "thumbnailImage": "mecatronica_thumbnail.png",
+    "luminanceImage": "mecatronica_luminance.png"
+  },
+  "created": 1790139360495,
+  "updated": 1790139360495
+}

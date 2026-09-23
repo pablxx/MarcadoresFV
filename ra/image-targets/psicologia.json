@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/psicologia_luminance.png",
+  "metadata": null,
+  "name": "psicologia",
+  "resources": {
+    "originalImage": "psicologia_original.png",
+    "croppedImage": "psicologia_cropped.png",
+    "thumbnailImage": "psicologia_thumbnail.png",
+    "luminanceImage": "psicologia_luminance.png"
+  },
+  "created": 1790139441156,
+  "updated": 1790139441156
+}

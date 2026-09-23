@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/contaduria_luminance.png",
+  "metadata": null,
+  "name": "contaduria",
+  "resources": {
+    "originalImage": "contaduria_original.png",
+    "croppedImage": "contaduria_cropped.png",
+    "thumbnailImage": "contaduria_thumbnail.png",
+    "luminanceImage": "contaduria_luminance.png"
+  },
+  "created": 1790139163036,
+  "updated": 1790139163036
+}
