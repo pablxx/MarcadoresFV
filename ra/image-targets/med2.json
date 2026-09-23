@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 521,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/med2_luminance.png",
+  "metadata": null,
+  "name": "med2",
+  "resources": {
+    "originalImage": "med2_original.png",
+    "croppedImage": "med2_cropped.png",
+    "thumbnailImage": "med2_thumbnail.png",
+    "luminanceImage": "med2_luminance.png"
+  },
+  "created": 1790204753627,
+  "updated": 1790204762594
+}
