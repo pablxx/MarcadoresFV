@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/tecmed3_luminance.png",
+  "metadata": null,
+  "name": "tecmed3",
+  "resources": {
+    "originalImage": "tecmed3_original.png",
+    "croppedImage": "tecmed3_cropped.png",
+    "thumbnailImage": "tecmed3_thumbnail.png",
+    "luminanceImage": "tecmed3_luminance.png"
+  },
+  "created": 1790221401208,
+  "updated": 1790221401208
+}

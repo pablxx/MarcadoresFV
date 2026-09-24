@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/adu3_luminance.png",
+  "metadata": null,
+  "name": "adu3",
+  "resources": {
+    "originalImage": "adu3_original.png",
+    "croppedImage": "adu3_cropped.png",
+    "thumbnailImage": "adu3_thumbnail.png",
+    "luminanceImage": "adu3_luminance.png"
+  },
+  "created": 1790221507930,
+  "updated": 1790221507930
+}

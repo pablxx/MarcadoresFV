@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/bio3_luminance.png",
+  "metadata": null,
+  "name": "bio3",
+  "resources": {
+    "originalImage": "bio3_original.png",
+    "croppedImage": "bio3_cropped.png",
+    "thumbnailImage": "bio3_thumbnail.png",
+    "luminanceImage": "bio3_luminance.png"
+  },
+  "created": 1790221550203,
+  "updated": 1790221550203
+}

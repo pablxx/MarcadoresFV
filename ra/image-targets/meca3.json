@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/meca3_luminance.png",
+  "metadata": null,
+  "name": "meca3",
+  "resources": {
+    "originalImage": "meca3_original.png",
+    "croppedImage": "meca3_cropped.png",
+    "thumbnailImage": "meca3_thumbnail.png",
+    "luminanceImage": "meca3_luminance.png"
+  },
+  "created": 1790221478394,
+  "updated": 1790221478394
+}

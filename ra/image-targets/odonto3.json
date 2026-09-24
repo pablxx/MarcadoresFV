@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/odonto3_luminance.png",
+  "metadata": null,
+  "name": "odonto3",
+  "resources": {
+    "originalImage": "odonto3_original.png",
+    "croppedImage": "odonto3_cropped.png",
+    "thumbnailImage": "odonto3_thumbnail.png",
+    "luminanceImage": "odonto3_luminance.png"
+  },
+  "created": 1790221337790,
+  "updated": 1790221337790
+}

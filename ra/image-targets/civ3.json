@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/civ3_luminance.png",
+  "metadata": null,
+  "name": "civ3",
+  "resources": {
+    "originalImage": "civ3_original.png",
+    "croppedImage": "civ3_cropped.png",
+    "thumbnailImage": "civ3_thumbnail.png",
+    "luminanceImage": "civ3_luminance.png"
+  },
+  "created": 1790221562573,
+  "updated": 1790221562573
+}

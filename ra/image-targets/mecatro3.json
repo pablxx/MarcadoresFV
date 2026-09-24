@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/mecatro3_luminance.png",
+  "metadata": null,
+  "name": "mecatro3",
+  "resources": {
+    "originalImage": "mecatro3_original.png",
+    "croppedImage": "mecatro3_cropped.png",
+    "thumbnailImage": "mecatro3_thumbnail.png",
+    "luminanceImage": "mecatro3_luminance.png"
+  },
+  "created": 1790221466538,
+  "updated": 1790221466538
+}

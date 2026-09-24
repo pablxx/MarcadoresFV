@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/peda3_luminance.png",
+  "metadata": null,
+  "name": "peda3",
+  "resources": {
+    "originalImage": "peda3_original.png",
+    "croppedImage": "peda3_cropped.png",
+    "thumbnailImage": "peda3_thumbnail.png",
+    "luminanceImage": "peda3_luminance.png"
+  },
+  "created": 1790221351430,
+  "updated": 1790221351430
+}

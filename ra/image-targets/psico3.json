@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/psico3_luminance.png",
+  "metadata": null,
+  "name": "psico3",
+  "resources": {
+    "originalImage": "psico3_original.png",
+    "croppedImage": "psico3_cropped.png",
+    "thumbnailImage": "psico3_thumbnail.png",
+    "luminanceImage": "psico3_luminance.png"
+  },
+  "created": 1790221430505,
+  "updated": 1790221430505
+}

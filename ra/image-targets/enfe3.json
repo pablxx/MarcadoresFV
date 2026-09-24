@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/enfe3_luminance.png",
+  "metadata": null,
+  "name": "enfe3",
+  "resources": {
+    "originalImage": "enfe3_original.png",
+    "croppedImage": "enfe3_cropped.png",
+    "thumbnailImage": "enfe3_thumbnail.png",
+    "luminanceImage": "enfe3_luminance.png"
+  },
+  "created": 1790225360887,
+  "updated": 1790225360887
+}

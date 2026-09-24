@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/farma3_luminance.png",
+  "metadata": null,
+  "name": "farma3",
+  "resources": {
+    "originalImage": "farma3_original.png",
+    "croppedImage": "farma3_cropped.png",
+    "thumbnailImage": "farma3_thumbnail.png",
+    "luminanceImage": "farma3_luminance.png"
+  },
+  "created": 1790221661631,
+  "updated": 1790221661631
+}

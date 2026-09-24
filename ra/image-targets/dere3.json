@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/dere3_luminance.png",
+  "metadata": null,
+  "name": "dere3",
+  "resources": {
+    "originalImage": "dere3_original.png",
+    "croppedImage": "dere3_cropped.png",
+    "thumbnailImage": "dere3_thumbnail.png",
+    "luminanceImage": "dere3_luminance.png"
+  },
+  "created": 1790221597735,
+  "updated": 1790221597735
+}
