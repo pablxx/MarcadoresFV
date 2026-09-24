@@ -1,37 +1,91 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Franz Vice | Próximamente</title>
+    <title>Franz Vicerrector | Próximamente</title>
+    
+    <!-- Importando fuente moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
-        /* Reseteo básico y fondo */
-        body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #0d1117; /* Tono oscuro tipo GitHub/Dev */
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            color: #c9d1d9;
+            min-height: 100vh;
+            padding: 20px;
             text-align: center;
         }
 
-        /* Título con efecto degradado */
+        .hero-image {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            /* border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); Sombra sutil */
+            margin-bottom: 2rem;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+
         h1 {
             font-size: 3.5rem;
             margin-bottom: 10px;
-            background: linear-gradient(90deg, #2c0fad 0%, #c10d0d 100%);
+            background: linear-gradient(90deg, #1351a7 0%, #e50505 80%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             padding: 0 20px;
         }
 
-        /* Subtítulo */
-        p {
+        .btn-gradient {
+            display: inline-block;
+            padding: 15px 30px;
+            /* Degradado de azul corporativo a rojo */
+            background: linear-gradient(135deg, #1351a7 0%, #e50505 80%);
+            color: #ffffff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 30px; /* Bordes muy redondeados */
+            /* Sombra inicial suave usando una mezcla de colores */
+            box-shadow: 0 4px 15px rgba(27, 54, 93, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-3px);
+            /* Sombra expandida que mezcla azul a la izquierda y rojo a la derecha */
+            box-shadow: -6px 12px 20px rgba(27, 54, 93, 0.25), 
+                         6px 12px 20px rgba(227, 0, 15, 0.25);
+            /* Aumentamos ligeramente el brillo del texto */
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* Animación de entrada general */
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+         p {
             font-size: 1.2rem;
             color: #8b949e;
             max-width: 500px;
@@ -39,34 +93,19 @@
             padding: 0 20px;
             line-height: 1.5;
         }
-
-        .btn-ra {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #eaebed;
-            background: #2c0fad;
-            text-decoration: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px #2c0fad;
-            transition: all 0.3s ease;
-        }
-
-        .btn-ra:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(24, 35, 188, 0.5);
-            background: #293c89;
-        }
     </style>
 </head>
-<body>
+<body class="fade-in">
 
-    <h1>Sitio en Construcción</h1>
+    
+    <!-- Imagen principal -->
+    <img src="FranzHero.jpeg" alt="Franz Vicerrector" class="hero-image">
+
+   <h1>Sitio en Construcción</h1>
     <!-- <p>Estamos preparando la página para brindarte toda la informacion necesaria, ¡esperanos!.</p> -->
      <p>Estamos preparando la página para brindarte toda la informacion necesaria, mientras tanto, puedes probar la experiencia RA que tenemos para ti.</p>
-    
-    <a href="/ra/index.html" class="btn-ra">Abrir Experiencia RA</a>
+    <!-- Botón con degradado hacia la experiencia RA -->
+    <a href="/ra/index.html" class="btn-gradient">Abrir Experiencia RA</a>
 
 </body>
 </html>
