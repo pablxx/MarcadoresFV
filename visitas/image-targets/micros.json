@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 144,
+    "left": 243,
+    "width": 595,
+    "height": 793,
+    "isRotated": false,
+    "originalWidth": 1080,
+    "originalHeight": 1080
+  },
+  "imagePath": "image-targets/micros_luminance.png",
+  "metadata": null,
+  "name": "micros",
+  "resources": {
+    "originalImage": "micros_original.png",
+    "croppedImage": "micros_cropped.png",
+    "thumbnailImage": "micros_thumbnail.png",
+    "luminanceImage": "micros_luminance.png"
+  },
+  "created": 1790800187296,
+  "updated": 1790800195773
+}

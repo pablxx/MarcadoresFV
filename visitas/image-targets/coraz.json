@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 214,
+    "left": 295,
+    "width": 490,
+    "height": 653,
+    "isRotated": false,
+    "originalWidth": 1080,
+    "originalHeight": 1080
+  },
+  "imagePath": "image-targets/coraz_luminance.png",
+  "metadata": null,
+  "name": "coraz",
+  "resources": {
+    "originalImage": "coraz_original.png",
+    "croppedImage": "coraz_cropped.png",
+    "thumbnailImage": "coraz_thumbnail.png",
+    "luminanceImage": "coraz_luminance.png"
+  },
+  "created": 1790800710338,
+  "updated": 1790800720350
+}

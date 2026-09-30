@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 135,
+    "width": 810,
+    "height": 1080,
+    "isRotated": false,
+    "originalWidth": 1080,
+    "originalHeight": 1080
+  },
+  "imagePath": "image-targets/rodilla_luminance.png",
+  "metadata": null,
+  "name": "rodilla",
+  "resources": {
+    "originalImage": "rodilla_original.png",
+    "croppedImage": "rodilla_cropped.png",
+    "thumbnailImage": "rodilla_thumbnail.png",
+    "luminanceImage": "rodilla_luminance.png"
+  },
+  "created": 1790800863803,
+  "updated": 1790800863803
+}

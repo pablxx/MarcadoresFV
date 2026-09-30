@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 25,
+    "width": 750,
+    "height": 1000,
+    "isRotated": true,
+    "originalWidth": 800,
+    "originalHeight": 1000
+  },
+  "imagePath": "image-targets/cppt_luminance.png",
+  "metadata": null,
+  "name": "cppt",
+  "resources": {
+    "originalImage": "cppt_original.png",
+    "croppedImage": "cppt_cropped.png",
+    "thumbnailImage": "cppt_thumbnail.png",
+    "luminanceImage": "cppt_luminance.png"
+  },
+  "created": 1788897671437,
+  "updated": 1788897671437
+}

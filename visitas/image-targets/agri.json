@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 384,
+    "left": 0,
+    "width": 1536,
+    "height": 2048,
+    "isRotated": true,
+    "originalWidth": 1536,
+    "originalHeight": 2816
+  },
+  "imagePath": "image-targets/agri_luminance.png",
+  "metadata": null,
+  "name": "agri",
+  "resources": {
+    "originalImage": "agri_original.png",
+    "croppedImage": "agri_cropped.png",
+    "thumbnailImage": "agri_thumbnail.png",
+    "luminanceImage": "agri_luminance.png"
+  },
+  "created": 1786636166531,
+  "updated": 1786636166531
+}

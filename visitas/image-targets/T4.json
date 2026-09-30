@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 100,
+    "width": 600,
+    "height": 800,
+    "isRotated": false,
+    "originalWidth": 800,
+    "originalHeight": 800
+  },
+  "imagePath": "image-targets/T4_luminance.jpg",
+  "metadata": null,
+  "name": "T4",
+  "resources": {
+    "originalImage": "T4_original.jpg",
+    "croppedImage": "T4_cropped.jpg",
+    "thumbnailImage": "T4_thumbnail.jpg",
+    "luminanceImage": "T4_luminance.jpg"
+  },
+  "created": 1787755837261,
+  "updated": 1787755837261
+}

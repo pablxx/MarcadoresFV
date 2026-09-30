@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 384,
+    "left": 0,
+    "width": 1536,
+    "height": 2048,
+    "isRotated": true,
+    "originalWidth": 1536,
+    "originalHeight": 2816
+  },
+  "imagePath": "image-targets/law_luminance.png",
+  "metadata": null,
+  "name": "law",
+  "resources": {
+    "originalImage": "law_original.png",
+    "croppedImage": "law_cropped.png",
+    "thumbnailImage": "law_thumbnail.png",
+    "luminanceImage": "law_luminance.png"
+  },
+  "created": 1786636191147,
+  "updated": 1786636191147
+}
