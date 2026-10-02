@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad — Franz Vice #SanFra</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #1a1a1a; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <h1>Política de privacidad — Franz Vice #SanFra</h1>
+  <p><strong>Última actualización:</strong> 1 de octubre de 2026</p>
+  <p>
+    Franz Vice #SanFra (paquete Android <code>bo.edu.usfx.sorteofranz</code>) es la app de la
+    Universidad San Francisco Xavier de Chuquisaca (USFX) para participar en el sorteo y en las
+    actividades de campaña en el campus. Aquí te contamos qué datos usamos, para qué, con quién
+    se comparten y cómo pedir que se borren.
+  </p>
+
+  <h2>Datos que usamos</h2>
+  <ul>
+    <li><strong>Cuenta de Google:</strong> al entrar con Google (Firebase Authentication) recibimos
+      tu ID de usuario, nombre, correo, si el correo está verificado y la foto de perfil.
+      El teléfono solo se guarda si tu cuenta de Google lo comparte; la app no lo pide aparte.</li>
+    <li><strong>Tu registro:</strong> la facultad que eliges y el número de ticket que te asigna la app
+      (y los tickets extra que ganes o canjees).</li>
+    <li><strong>Puntos y actividad:</strong> saldo de puntos e historial de acciones que suman puntos:
+      entrada diaria, asistencia a actividades (check-in con QR o código), noticias leídas,
+      veces que compartes la app, invitaciones (referidos) y canjes de premios.
+      Guardamos el tipo de acción, la actividad o noticia relacionada y la fecha.</li>
+    <li><strong>Referidos:</strong> tu código de invitación y, si llegaste invitado, el código de quien te invitó,
+      para darle los puntos a esa persona y a ti.</li>
+    <li><strong>Notificaciones:</strong> el token de tu celular para avisos push (Firebase Cloud Messaging),
+      si aceptaste o no las notificaciones, y la suscripción a los temas de avisos generales
+      y de tu facultad.</li>
+    <li><strong>Resultados del sorteo:</strong> si ganas, guardamos tu nombre, el número de ticket ganador y el premio.</li>
+    <li><strong>Datos técnicos:</strong> lo mínimo del dispositivo y de la conexión que los servicios de
+      Google Firebase necesitan para que la app funcione (por ejemplo, la dirección IP al conectarse).
+      No usamos publicidad ni el identificador publicitario del celular.</li>
+  </ul>
+
+  <h2>Permisos del celular</h2>
+  <ul>
+    <li><strong>Cámara:</strong> se usa para escanear el código QR de asistencia en las actividades y para
+      la experiencia de realidad aumentada que se abre dentro de la app desde
+      <a href="https://franzvice.com">franzvice.com</a>. Las imágenes se procesan en tu celular en el momento;
+      nosotros no las grabamos, no las subimos ni las guardamos. Del QR solo usamos el código que contiene.</li>
+    <li><strong>Sensores de movimiento y orientación:</strong> solo para la experiencia de realidad aumentada
+      (para que el contenido siga el movimiento del teléfono). No se guardan.</li>
+    <li><strong>Portapapeles:</strong> al completar tu registro, la app lee una vez el portapapeles
+      solo para buscar un código de invitación (texto del tipo <code>FRANZREF:CÓDIGO</code> o un enlace de invitación).
+      Si no hay código, no se guarda nada del portapapeles. La app también copia texto al portapapeles
+      cuando tú tocas “copiar” (por ejemplo, tu código o enlace para invitar).</li>
+    <li><strong>Notificaciones:</strong> para mandarte avisos, solo si das permiso. Puedes quitarlo cuando quieras
+      desde los ajustes del celular.</li>
+  </ul>
+
+  <h2>Página web de invitación</h2>
+  <p>
+    Si abres un enlace de invitación (<code>/r/CÓDIGO</code>) en el navegador, la página puede guardar
+    el código en tu navegador por unos días y copiarlo al portapapeles para que la app lo reconozca
+    al registrarte. Solo se guarda el código de invitación, no datos personales.
+  </p>
+
+  <h2>Para qué los usamos</h2>
+  <ul>
+    <li>Crear tu participación en el sorteo y asignarte tus tickets.</li>
+    <li>Sumar y mostrar tus puntos, registrar asistencias, referidos y canjes.</li>
+    <li>Mandarte avisos de fechas, premios y novedades (si aceptas notificaciones).</li>
+    <li>Mostrar los resultados del sorteo a los participantes (nombre del ganador, ticket y premio)
+      y contactar a quien gane.</li>
+    <li>Evitar cuentas duplicadas, trampas en los puntos y cuidar que el sorteo sea justo.</li>
+  </ul>
+
+  <h2>Con quién se comparten</h2>
+  <p>
+    Los datos se guardan y procesan en Google Firebase (Authentication, Cloud Firestore,
+    Cloud Functions, Cloud Messaging y Hosting), bajo los términos y la política de privacidad de Google.
+    La experiencia de realidad aumentada es una página web (franzvice.com) que se muestra dentro de la app;
+    la app no le envía tus datos de cuenta.
+    No vendemos ni alquilamos datos personales. Solo personal autorizado de la USFX puede verlos
+    para administrar la campaña y el sorteo.
+  </p>
+
+  <h2>Cuánto tiempo y seguridad</h2>
+  <p>
+    Conservamos los datos mientras el servicio esté activo y el tiempo necesario para
+    obligaciones institucionales.
+    Los tokens de notificaciones se quitan al cerrar sesión. La conexión va cifrada (HTTPS), la base de datos
+    tiene reglas de acceso y cada persona solo puede ver su propio registro.
+  </p>
+
+  <h2 id="eliminacion-cuenta">Borrar tu cuenta y tus datos</h2>
+  <p>
+    Si quieres borrar tu cuenta de <strong>Franz Vice #SanFra</strong> y los datos
+    asociados, sigue estos pasos:
+  </p>
+  <ol>
+    <li>Escribe a <strong>jhamilex.jgr@gmail.com</strong> desde el mismo correo de Google
+      con el que entraste a la app.</li>
+    <li>Pon en el asunto: <em>Borrar cuenta — Franz Vice #SanFra</em>.</li>
+    <li>Respondemos en un plazo razonable (por lo general hasta 30 días) y te confirmamos por correo
+      cuando esté hecho.</li>
+  </ol>
+  <p><strong>Qué se borra:</strong> tu cuenta en Firebase Authentication y tu registro en Firestore
+    (ID, nombre, correo, foto de perfil, teléfono si se guardó, facultad, tickets, puntos,
+    código de invitación y quién te invitó), tu historial de puntos (asistencias, noticias leídas,
+    veces que compartiste, referidos), tus canjes, tus avisos de premio y los tokens de notificaciones (FCM).
+    Al borrar la app o cerrar sesión, el celular deja de recibir avisos.</p>
+  <p><strong>Qué puede quedar:</strong> si ganaste un sorteo, el registro del resultado (nombre, ticket y premio)
+    como respaldo de transparencia del sorteo, y registros mínimos que la universidad o la ley pidan
+    conservar, solo el tiempo necesario. Las copias de respaldo se eliminan en su ciclo normal.
+    Al borrar la cuenta pierdes tus tickets y puntos.</p>
+
+  <h2>Tus derechos</h2>
+  <p>
+    Puedes pedir ver, corregir o borrar tus datos con el correo de arriba
+    o por los canales oficiales de la USFX. También puedes quitar en cualquier momento los permisos
+    de cámara y notificaciones desde los ajustes del celular.
+  </p>
+
+  <h2>Menores</h2>
+  <p>La app es para la comunidad universitaria; no buscamos datos de menores a propósito.</p>
+
+  <h2>Cambios</h2>
+  <p>Si cambia esta política, lo publicamos en esta misma URL con la fecha nueva.</p>
+
+  <h2>Contacto</h2>
+  <p>Universidad San Francisco Xavier de Chuquisaca (USFX) — Sucre, Bolivia.<br>
+    Correo: <strong>jhamilex.jgr@gmail.com</strong></p>
+</body>
+</html>

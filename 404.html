@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Te invitaron al sorteo · Franz Vice #SanFra</title>
+  <meta name="description" content="Descarga la app Franz Vice #SanFra, regístrate y participa por los premios.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Franz Vice #SanFra">
+  <meta property="og:title" content="Te invitaron al sorteo Franz Vice #SanFra">
+  <meta property="og:description" content="Descarga la app, regístrate y participa por los premios.">
+  <meta property="og:image" content="https://franzvice.com/play-assets/og-invite.jpg?v=7">
+  <meta property="og:image:secure_url" content="https://franzvice.com/play-assets/og-invite.jpg?v=7">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:image:alt" content="Te invitaron al sorteo Franz Vice #SanFra">
+  <meta property="og:locale" content="es_BO">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Te invitaron al sorteo Franz Vice #SanFra">
+  <meta name="twitter:description" content="Descarga la app, regístrate y participa por los premios.">
+  <meta name="twitter:image" content="https://franzvice.com/play-assets/og-invite.jpg?v=7">
+  <link rel="image_src" href="https://franzvice.com/play-assets/og-invite.jpg?v=7">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ffffff;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero-image {
+      max-width: 260px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 1.25rem;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    .kicker {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #6b7686;
+      margin-bottom: 8px;
+    }
+
+    .title {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, #1351a7 0%, #e50505 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+
+    .copy {
+      color: #3d4a5c;
+      font-size: 1rem;
+      line-height: 1.5;
+      max-width: 360px;
+      margin-bottom: 20px;
+    }
+
+    .code-box {
+      margin: 0 auto 20px;
+      padding: 10px 18px;
+      border-radius: 14px;
+      background: #eef1f6;
+      min-width: 160px;
+    }
+
+    .code-box[hidden],
+    .btn[hidden],
+    .hint[hidden] {
+      display: none;
+    }
+
+    .code-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      color: #6b7686;
+    }
+
+    .code {
+      margin-top: 3px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      color: #1351a7;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: min(320px, 100%);
+      padding: 15px 35px;
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(135deg, #1351a7 0%, #e50505 80%);
+      color: #ffffff;
+      box-shadow: 0 4px 15px rgba(27, 54, 93, 0.3);
+    }
+
+    .btn-gradient:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      background: #ffffff;
+      color: #1351a7;
+      border: 2px solid #1351a7;
+    }
+
+    .hint {
+      max-width: 340px;
+      margin-top: 8px;
+      font-size: 0.85rem;
+      line-height: 1.45;
+      color: #6b7686;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="fade-in">
+
+  <img src="/FranzHero.jpeg" alt="Franz Vicerrector" class="hero-image">
+
+  <p id="kicker" class="kicker">Franz Vice #SanFra</p>
+  <h1 id="title" class="title">Franz Vice #SanFra</h1>
+  <p id="copy" class="copy"></p>
+
+  <div id="codeWrap" class="code-box" hidden>
+    <div class="code-label">CÓDIGO</div>
+    <div id="code" class="code"></div>
+  </div>
+
+  <a id="primary" class="btn btn-gradient" hidden href="/app">Descargar la app</a>
+  <a id="secondary" class="btn btn-outline" hidden href="/app">Abrir la app</a>
+  <p id="hint" class="hint" hidden></p>
+
+  <script>
+    (function () {
+      var APP_SCHEME = 'sorteofranz';
+      var ANDROID_PACKAGE = 'bo.edu.usfx.sorteofranz';
+      var DEFAULTS = {
+        downloadUrl: 'https://franzvice.com/app',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=bo.edu.usfx.sorteofranz',
+        appStoreUrl: '',
+      };
+      var ENDPOINT =
+        'https://firestore.googleapis.com/v1/projects/sorteo-franz-usfx/databases/(default)/documents/config/campaign';
+      var CODE_RE = /^[A-Z0-9]{4,12}$/;
+      var STORE_KEY = 'franz_ref';
+      var STORE_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+      var IOS_SOON = 'La app para iPhone llegará pronto. Por ahora solo está disponible para Android.';
+
+      function $(id) {
+        try {
+          return document.getElementById(id);
+        } catch (_) {
+          return null;
+        }
+      }
+
+      function setText(el, text) {
+        if (el) el.textContent = text;
+      }
+
+      function setHref(el, href) {
+        if (el && href) el.setAttribute('href', href);
+      }
+
+      function show(el, visible) {
+        if (el) el.hidden = !visible;
+      }
+
+      function field(doc, key) {
+        var value = doc && doc.fields && doc.fields[key] && doc.fields[key].stringValue;
+        return typeof value === 'string' ? value.trim() : '';
+      }
+
+      function safeDecode(value) {
+        try {
+          return decodeURIComponent(value);
+        } catch (_) {
+          return '';
+        }
+      }
+
+      function normalizeCode(raw) {
+        var value = String(raw || '').trim().toUpperCase();
+        return CODE_RE.test(value) ? value : '';
+      }
+
+      function queryParam(name) {
+        try {
+          return new URLSearchParams(location.search).get(name) || '';
+        } catch (_) {
+          var match = new RegExp('[?&]' + name + '=([^&#]*)').exec(location.search || '');
+          return match ? safeDecode(match[1].replace(/\+/g, ' ')) : '';
+        }
+      }
+
+      function saveCode(value) {
+        try {
+          localStorage.setItem(
+            STORE_KEY,
+            JSON.stringify({ code: value, exp: Date.now() + STORE_TTL_MS })
+          );
+        } catch (_) {}
+      }
+
+      function copyCode(value) {
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            var pending = navigator.clipboard.writeText('FRANZREF:' + value);
+            if (pending && pending.catch) pending.catch(function () {});
+          }
+        } catch (_) {}
+      }
+
+      function userAgent() {
+        try {
+          return navigator.userAgent || '';
+        } catch (_) {
+          return '';
+        }
+      }
+
+      function isPreviewBot() {
+        return /WhatsApp|facebookexternalhit|Facebot|Twitterbot|Telegrambot|Slackbot|Discordbot|LinkedInBot|Googlebot|bingbot|Applebot/i.test(userAgent());
+      }
+
+      function detectPlatform() {
+        var ua = userAgent();
+        var iPadOs = false;
+        try {
+          iPadOs = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+        } catch (_) {}
+        var isAndroid = /Android/i.test(ua);
+        var isIos = !isAndroid && (/iPad|iPhone|iPod/i.test(ua) || iPadOs);
+        return { android: isAndroid, ios: isIos };
+      }
+
+      function withRef(url, ref) {
+        try {
+          var u = new URL(url, location.origin);
+          if (ref) u.searchParams.set('ref', ref);
+          return u.toString();
+        } catch (_) {
+          if (!ref) return url;
+          return url + (url.indexOf('?') >= 0 ? '&' : '?') + 'ref=' + encodeURIComponent(ref);
+        }
+      }
+
+      function playWithReferrer(playUrl, ref) {
+        var referrer = 'utm_source=referral&utm_medium=invite&utm_content=' + encodeURIComponent(ref || '');
+        try {
+          var u = new URL(playUrl);
+          if (ref) u.searchParams.set('referrer', referrer);
+          return u.toString();
+        } catch (_) {
+          if (!ref) return playUrl;
+          return playUrl + (playUrl.indexOf('?') >= 0 ? '&' : '?') + 'referrer=' + encodeURIComponent(referrer);
+        }
+      }
+
+      function androidIntentUrl(appUrl, fallbackUrl) {
+        var path = appUrl.replace(new RegExp('^' + APP_SCHEME + '://'), '');
+        return (
+          'intent://' + path + '#Intent;scheme=' + APP_SCHEME + ';package=' + ANDROID_PACKAGE + ';' +
+          'S.browser_fallback_url=' + encodeURIComponent(fallbackUrl) + ';end'
+        );
+      }
+
+      function loadConfig(onConfig) {
+        if (typeof fetch !== 'function') return;
+        fetch(ENDPOINT)
+          .then(function (res) {
+            if (!res.ok) throw new Error('campaign');
+            return res.json();
+          })
+          .then(function (doc) {
+            onConfig({
+              downloadUrl: field(doc, 'downloadUrl') || DEFAULTS.downloadUrl,
+              playStoreUrl: field(doc, 'playStoreUrl') || DEFAULTS.playStoreUrl,
+              appStoreUrl: field(doc, 'appStoreUrl') || '',
+            });
+          })
+          .catch(function () {});
+      }
+
+      var parts = String(location.pathname || '').split('/').filter(Boolean);
+      var route = (parts[0] || '').toLowerCase();
+      var platform = detectPlatform();
+      var kicker = $('kicker');
+      var title = $('title');
+      var copy = $('copy');
+      var primary = $('primary');
+      var secondary = $('secondary');
+      var hint = $('hint');
+
+      function referralPage() {
+        var code =
+          normalizeCode(safeDecode(parts[1] || '')) ||
+          normalizeCode(queryParam('ref')) ||
+          normalizeCode(queryParam('code'));
+        var config = {
+          downloadUrl: DEFAULTS.downloadUrl,
+          playStoreUrl: DEFAULTS.playStoreUrl,
+          appStoreUrl: DEFAULTS.appStoreUrl,
+        };
+        var appUrl = code
+          ? APP_SCHEME + '://?ref=' + encodeURIComponent(code)
+          : APP_SCHEME + '://';
+        var defaultCopy = 'Descarga la app, regístrate y participa por los premios.';
+
+        setText(kicker, 'Invitación · #SanFra');
+        setText(title, 'Te invitaron al sorteo');
+        setText(copy, defaultCopy);
+        setText(primary, 'Descargar la app');
+        setText(secondary, 'Abrir la app');
+        show(primary, true);
+        show(secondary, true);
+        if (code) {
+          setText($('code'), code);
+          show($('codeWrap'), true);
+        }
+
+        function applyConfig() {
+          setHref(secondary, appUrl);
+          setHref(primary, withRef(config.downloadUrl || DEFAULTS.downloadUrl, code));
+          if (!platform.ios) return;
+          setText(copy, config.appStoreUrl ? defaultCopy : IOS_SOON);
+        }
+
+        function goStore() {
+          try {
+            if (platform.android) {
+              window.location.replace(playWithReferrer(config.playStoreUrl || DEFAULTS.playStoreUrl, code));
+              return;
+            }
+            if (platform.ios && config.appStoreUrl) {
+              window.location.replace(config.appStoreUrl);
+            }
+          } catch (_) {}
+        }
+
+        if (code) {
+          saveCode(code);
+          copyCode(code);
+          var onTap = function () { copyCode(code); };
+          if (primary) primary.addEventListener('click', onTap);
+          if (secondary) secondary.addEventListener('click', onTap);
+        }
+
+        applyConfig();
+
+        var canTryApp = platform.android || (platform.ios && !!config.appStoreUrl);
+        if (code && canTryApp && !isPreviewBot()) {
+          var left = false;
+          try {
+            document.addEventListener('visibilitychange', function () {
+              if (document.hidden) left = true;
+            });
+            window.location.href = appUrl;
+          } catch (_) {}
+          setTimeout(function () {
+            if (!left) goStore();
+          }, 1400);
+        }
+
+        loadConfig(function (next) {
+          config = next;
+          applyConfig();
+        });
+      }
+
+      function checkInPage() {
+        var token = String(safeDecode(parts[1] || '')).trim();
+        var downloadUrl = DEFAULTS.downloadUrl;
+        var appUrl = token ? APP_SCHEME + '://checkin?t=' + encodeURIComponent(token) : '';
+
+        setText(title, 'Registrar asistencia');
+        setText(primary, 'Abrir la app');
+        setText(secondary, 'Descargar la app');
+        show(secondary, true);
+
+        if (!token) {
+          setText(copy, 'Este enlace está incompleto. Pide uno nuevo o escanea el QR otra vez.');
+        } else {
+          setText(copy, 'Estamos abriendo la app Franz Vice #SanFra para registrar tu asistencia. Si no se abre, toca “Abrir la app”.');
+          setText(hint, '¿No tienes la app? Descárgala, inicia sesión y vuelve a abrir este enlace o escanea el QR otra vez para sumar tus puntos.');
+          show(primary, true);
+          show(hint, true);
+        }
+
+        function openUrl() {
+          if (!appUrl) return '';
+          return platform.android ? androidIntentUrl(appUrl, downloadUrl) : appUrl;
+        }
+
+        function apply() {
+          setHref(primary, openUrl());
+          setHref(secondary, downloadUrl);
+        }
+
+        apply();
+
+        if (appUrl && !isPreviewBot()) {
+          try {
+            window.location.href = openUrl();
+          } catch (_) {}
+        }
+
+        loadConfig(function (next) {
+          if (/^https:\/\//i.test(next.downloadUrl)) downloadUrl = next.downloadUrl;
+          apply();
+        });
+      }
+
+      function notFoundPage() {
+        document.title = 'Página no encontrada · Franz Vicerrector';
+        setText(title, 'Página no encontrada');
+        setText(copy, 'El enlace que abriste no existe o ya no está disponible.');
+        setText(primary, 'Ir a franzvice.com');
+        setHref(primary, '/');
+        show(primary, true);
+      }
+
+      if (route === 'get') {
+        try {
+          window.location.replace('/app' + (location.search || ''));
+        } catch (_) {}
+        setHref(primary, '/app' + (location.search || ''));
+        setText(primary, 'Descargar la app');
+        show(primary, true);
+        return;
+      }
+      if (route === 'r' || route === 'ref') {
+        referralPage();
+        return;
+      }
+      if (route === 'c' || route === 'checkin') {
+        checkInPage();
+        return;
+      }
+      notFoundPage();
+    })();
+  </script>
+</body>
+</html>
