@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descarga Franz Vice #SanFra</title>
+  <meta name="description" content="Descarga la app Franz Vice #SanFra, regístrate y participa por los premios.">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="canonical" href="https://franzvice.com/app">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Franz Vicerrector">
+  <meta property="og:url" content="https://franzvice.com/app">
+  <meta property="og:title" content="Descarga Franz Vice #SanFra">
+  <meta property="og:description" content="Regístrate en la app y participa por los premios.">
+  <meta property="og:image" content="https://franzvice.com/FranzHero.jpeg">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:image:alt" content="Franz Vicerrector">
+  <meta property="og:locale" content="es_BO">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Descarga Franz Vice #SanFra">
+  <meta name="twitter:description" content="Regístrate en la app y participa por los premios.">
+  <meta name="twitter:image" content="https://franzvice.com/FranzHero.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ffffff;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero-image {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    .title {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, #1351a7 0%, #e50505 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+
+    .copy {
+      color: #3d4a5c;
+      font-size: 1rem;
+      line-height: 1.5;
+      max-width: 360px;
+      margin-bottom: 24px;
+    }
+
+    .btn-gradient {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: min(320px, 100%);
+      padding: 15px 35px;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #1351a7 0%, #e50505 80%);
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 15px rgba(27, 54, 93, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn-gradient:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-gradient[hidden] {
+      display: none;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="fade-in">
+
+  <img src="/FranzHero.jpeg" alt="Franz Vicerrector" class="hero-image">
+
+  <h1 class="title">Franz Vice #SanFra</h1>
+  <p id="copy" class="copy">Te estamos llevando a la tienda de tu celular.</p>
+
+  <a id="play" class="btn-gradient" href="https://play.google.com/store/apps/details?id=bo.edu.usfx.sorteofranz">
+    <i class="fa-brands fa-google-play"></i>Google Play
+  </a>
+  <a id="ios" class="btn-gradient" hidden href="#">
+    <i class="fa-brands fa-apple"></i>App Store
+  </a>
+
+  <script>
+    (function () {
+      var DEFAULTS = {
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=bo.edu.usfx.sorteofranz',
+        appStoreUrl: '',
+      };
+      var ENDPOINT =
+        'https://firestore.googleapis.com/v1/projects/sorteo-franz-usfx/databases/(default)/documents/config/campaign';
+
+      var CODE_RE = /^[A-Z0-9]{4,12}$/;
+      var STORE_KEY = 'franz_ref';
+      var STORE_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+
+      function $(id) {
+        try {
+          return document.getElementById(id);
+        } catch (_) {
+          return null;
+        }
+      }
+
+      function setText(el, text) {
+        if (el) el.textContent = text;
+      }
+
+      function safeDecode(value) {
+        try {
+          return decodeURIComponent(value);
+        } catch (_) {
+          return '';
+        }
+      }
+
+      function normalizeCode(raw) {
+        var value = String(raw || '').trim().toUpperCase();
+        return CODE_RE.test(value) ? value : '';
+      }
+
+      function queryParam(name) {
+        try {
+          return new URLSearchParams(location.search).get(name) || '';
+        } catch (_) {
+          var match = new RegExp('[?&]' + name + '=([^&#]*)').exec(location.search || '');
+          return match ? safeDecode(match[1].replace(/\+/g, ' ')) : '';
+        }
+      }
+
+      function readStoredCode() {
+        try {
+          var raw = localStorage.getItem(STORE_KEY);
+          if (!raw) return '';
+          var data = null;
+          try {
+            data = JSON.parse(raw);
+          } catch (_) {}
+          var stored = data && typeof data === 'object' ? normalizeCode(data.code) : '';
+          if (stored && typeof data.exp === 'number' && data.exp > Date.now()) return stored;
+          localStorage.removeItem(STORE_KEY);
+        } catch (_) {}
+        return '';
+      }
+
+      function saveCode(value) {
+        try {
+          localStorage.setItem(
+            STORE_KEY,
+            JSON.stringify({ code: value, exp: Date.now() + STORE_TTL_MS })
+          );
+        } catch (_) {}
+      }
+
+      function copyCode(value) {
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            var pending = navigator.clipboard.writeText('FRANZREF:' + value);
+            if (pending && pending.catch) pending.catch(function () {});
+          }
+        } catch (_) {}
+      }
+
+      function detectPlatform() {
+        var ua = '';
+        var iPadOs = false;
+        try {
+          ua = navigator.userAgent || '';
+          iPadOs = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+        } catch (_) {}
+        var isAndroid = /Android/i.test(ua);
+        var isIos = !isAndroid && (/iPad|iPhone|iPod/i.test(ua) || iPadOs);
+        var isBot = /WhatsApp|facebookexternalhit|Facebot|Twitterbot|Telegrambot|Slackbot|Discordbot|LinkedInBot|Googlebot|bingbot|Applebot/i.test(ua);
+        return { android: isAndroid, ios: isIos, bot: isBot };
+      }
+
+      var playBtn = $('play');
+      var iosBtn = $('ios');
+      var copy = $('copy');
+      var platform = detectPlatform();
+      var queryRef = normalizeCode(queryParam('ref')) || normalizeCode(queryParam('code'));
+      var ref = queryRef || readStoredCode();
+      if (ref) {
+        if (queryRef) saveCode(ref);
+        copyCode(ref);
+        var onTap = function () { copyCode(ref); };
+        if (playBtn) playBtn.addEventListener('click', onTap);
+        if (iosBtn) iosBtn.addEventListener('click', onTap);
+      }
+
+      function playWithReferrer(playUrl) {
+        var referrer = 'utm_source=referral&utm_medium=invite&utm_content=' + encodeURIComponent(ref || '');
+        try {
+          var u = new URL(playUrl);
+          if (ref) u.searchParams.set('referrer', referrer);
+          return u.toString();
+        } catch (_) {
+          if (!ref) return playUrl;
+          return playUrl + (playUrl.indexOf('?') >= 0 ? '&' : '?') + 'referrer=' + encodeURIComponent(referrer);
+        }
+      }
+
+      var redirected = false;
+
+      function redirect(url) {
+        if (redirected || platform.bot || !url) return;
+        redirected = true;
+        try {
+          window.location.replace(url);
+        } catch (_) {
+          redirected = false;
+        }
+      }
+
+      function field(doc, key) {
+        var value = doc && doc.fields && doc.fields[key] && doc.fields[key].stringValue;
+        return typeof value === 'string' ? value.trim() : '';
+      }
+
+      function apply(config) {
+        var play = playWithReferrer(config.playStoreUrl || DEFAULTS.playStoreUrl);
+        var apple = config.appStoreUrl || '';
+
+        if (playBtn) playBtn.setAttribute('href', play);
+        if (iosBtn) {
+          if (apple) {
+            iosBtn.setAttribute('href', apple);
+            iosBtn.hidden = false;
+          } else {
+            iosBtn.hidden = true;
+          }
+        }
+
+        if (platform.android) {
+          redirect(play);
+          return;
+        }
+        if (platform.ios && apple) {
+          setText(copy, 'Te estamos llevando a App Store.');
+          redirect(apple);
+          return;
+        }
+        if (platform.ios) {
+          setText(copy, 'La app para iPhone llegará pronto. Por ahora solo está disponible para Android.');
+          return;
+        }
+        setText(copy, 'Elige la tienda de tu celular. En el teléfono se abre sola.');
+      }
+
+      apply(DEFAULTS);
+
+      if (typeof fetch !== 'function') return;
+      fetch(ENDPOINT)
+        .then(function (res) {
+          if (!res.ok) throw new Error('campaign');
+          return res.json();
+        })
+        .then(function (doc) {
+          apply({
+            playStoreUrl: field(doc, 'playStoreUrl') || DEFAULTS.playStoreUrl,
+            appStoreUrl: field(doc, 'appStoreUrl') || '',
+          });
+        })
+        .catch(function () {});
+    })();
+  </script>
+</body>
+</html>
