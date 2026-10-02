@@ -99,6 +99,28 @@
       display: none;
     }
 
+    .btn-soon {
+      background: #eef1f6;
+      color: #6b7686;
+      box-shadow: none;
+      cursor: default;
+    }
+
+    .btn-soon:hover {
+      transform: none;
+    }
+
+    .soon-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #1351a7 0%, #e50505 80%);
+      color: #ffffff;
+    }
+
     .fade-in {
       animation: fadeIn 0.8s ease-in-out;
     }
@@ -122,6 +144,9 @@
   <a id="ios" class="btn-gradient" hidden href="#">
     <i class="fa-brands fa-apple"></i>App Store
   </a>
+  <div id="ios-soon" class="btn-gradient btn-soon" role="button" aria-disabled="true">
+    <i class="fa-brands fa-apple"></i>App Store<span class="soon-tag">Muy pronto</span>
+  </div>
 
   <script>
     (function () {
@@ -218,6 +243,7 @@
 
       var playBtn = $('play');
       var iosBtn = $('ios');
+      var iosSoon = $('ios-soon');
       var copy = $('copy');
       var platform = detectPlatform();
       var queryRef = normalizeCode(queryParam('ref')) || normalizeCode(queryParam('code'));
@@ -272,6 +298,7 @@
             iosBtn.hidden = true;
           }
         }
+        if (iosSoon) iosSoon.hidden = !!apple;
 
         if (platform.android) {
           redirect(play);
