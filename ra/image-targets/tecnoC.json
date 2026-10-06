@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 520,
+    "width": 3125,
+    "height": 4167,
+    "isRotated": false,
+    "originalWidth": 4167,
+    "originalHeight": 4167
+  },
+  "imagePath": "image-targets/tecnoC_luminance.png",
+  "metadata": null,
+  "name": "tecnoC",
+  "resources": {
+    "originalImage": "tecnoC_original.png",
+    "croppedImage": "tecnoC_cropped.png",
+    "thumbnailImage": "tecnoC_thumbnail.png",
+    "luminanceImage": "tecnoC_luminance.png"
+  },
+  "created": 1791230430471,
+  "updated": 1791230430471
+}

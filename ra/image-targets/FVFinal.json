@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 130,
+    "left": 0,
+    "width": 2463,
+    "height": 3284,
+    "isRotated": true,
+    "originalWidth": 2463,
+    "originalHeight": 3544
+  },
+  "imagePath": "image-targets/FVFinal_luminance.jpg",
+  "metadata": null,
+  "name": "FVFinal",
+  "resources": {
+    "originalImage": "FVFinal_original.jpg",
+    "croppedImage": "FVFinal_cropped.jpg",
+    "thumbnailImage": "FVFinal_thumbnail.jpg",
+    "luminanceImage": "FVFinal_luminance.jpg"
+  },
+  "created": 1791300554349,
+  "updated": 1791300554349
+}

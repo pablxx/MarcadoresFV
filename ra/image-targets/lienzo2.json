@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 2361,
+    "left": 0,
+    "width": 3544,
+    "height": 4725,
+    "isRotated": false,
+    "originalWidth": 3544,
+    "originalHeight": 9449
+  },
+  "imagePath": "image-targets/lienzo2_luminance.jpg",
+  "metadata": null,
+  "name": "lienzo2",
+  "resources": {
+    "originalImage": "lienzo2_original.jpg",
+    "croppedImage": "lienzo2_cropped.jpg",
+    "thumbnailImage": "lienzo2_thumbnail.jpg",
+    "luminanceImage": "lienzo2_luminance.jpg"
+  },
+  "created": 1791300434717,
+  "updated": 1791300434717
+}
