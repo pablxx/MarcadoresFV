@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 256,
+    "width": 1536,
+    "height": 2048,
+    "isRotated": false,
+    "originalWidth": 2048,
+    "originalHeight": 2048
+  },
+  "imagePath": "image-targets/markSL_luminance.png",
+  "metadata": null,
+  "name": "markSL",
+  "resources": {
+    "originalImage": "markSL_original.png",
+    "croppedImage": "markSL_cropped.png",
+    "thumbnailImage": "markSL_thumbnail.png",
+    "luminanceImage": "markSL_luminance.png"
+  },
+  "created": 1791383621937,
+  "updated": 1791383621937
+}

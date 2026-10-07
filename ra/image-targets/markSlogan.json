@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 722,
+    "left": 0,
+    "width": 1574,
+    "height": 2098,
+    "isRotated": true,
+    "originalWidth": 1574,
+    "originalHeight": 3544
+  },
+  "imagePath": "image-targets/markSlogan_luminance.png",
+  "metadata": null,
+  "name": "markSlogan",
+  "resources": {
+    "originalImage": "markSlogan_original.png",
+    "croppedImage": "markSlogan_cropped.png",
+    "thumbnailImage": "markSlogan_thumbnail.png",
+    "luminanceImage": "markSlogan_luminance.png"
+  },
+  "created": 1791383417782,
+  "updated": 1791383417782
+}
