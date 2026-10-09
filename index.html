@@ -103,26 +103,58 @@
             background-color: #000000;
         }
 
-        .btn-gradient {
-            display: inline-block;
-            padding: 15px 35px;
-            background: linear-gradient(135deg, #1351a7 0%, #e50505 80%);
-            color: #ffffff;
-            font-size: 1.15rem;
-            font-weight: 700;
-            text-decoration: none;
-            border-radius: 30px;
-            box-shadow: 0 4px 15px rgba(27, 54, 93, 0.3);
-            transition: all 0.3s ease;
-            margin-bottom: 10px;
-        }
+      .btn-gradient {
+    position: relative; 
+    overflow: hidden; 
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #1351a7 0%, #e50505 80%);
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(27, 54, 93, 0.3);
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    animation: pulse-glow 2.5s infinite; 
+    max-width: 240px;
+    gap: 10px;
+    }
 
-        .btn-gradient:hover {
-            transform: translateY(-3px);
-            box-shadow: -6px 12px 20px rgba(27, 54, 93, 0.25), 
-                         6px 12px 20px rgba(227, 0, 15, 0.25);
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+    .btn-gradient::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+        transform: skewX(-25deg);
+        animation: shine 3s infinite;
+        
+    }
+
+    .btn-gradient:hover {
+        transform: translateY(-3px) scale(1.02); 
+        box-shadow: -6px 12px 20px rgba(27, 54, 93, 0.35), 
+                    6px 12px 20px rgba(227, 0, 15, 0.35);
+        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    @keyframes pulse-glow {
+        0% { box-shadow: 0 0 0 0 rgba(254, 0, 0, 0.5); }
+        70% { box-shadow: 0 0 0 15px rgba(227, 5, 5, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(227, 5, 5, 0); }
+    }
+
+    @keyframes shine {
+        0% { left: -100%; }
+        20% { left: 200%; } 
+        100% { left: 200%; }
+    }
 
         .btn-app {
             display: inline-flex;
@@ -139,8 +171,10 @@
             box-shadow: 0 4px 12px rgba(19, 81, 167, 0.25);
             transition: all 0.3s ease;
             width: 100%;
-            max-width: 280px;
+            max-width: 240px;
         }
+
+        
 
         .action-buttons {
             display: flex;
@@ -188,12 +222,13 @@
     </div>
 
     <div class="action-buttons">
-         <a href="/ra/index.html" class="btn-gradient"><i class="fa-solid fa-mobile-screen-button" style="margin-right: 8px;"></i>Abrir Experiencia RA</a>
+        <h2 class="social-title-sm">¡Descarga la aplicación y podrás ganar grandes premios!</h2>
+        <a href="https://play.google.com/store/apps/details?id=bo.edu.usfx.sorteofranz&pcampaignid=web_share" target="_blank" class="btn-gradient">
+                <i class="fa-brands fa-google-play"></i>   Descargar app </a>
 
-         <h2 class="social-title-sm">¡Descarga la aplicación y podrás ganar grandes premios!</h2>
-        <a href="https://play.google.com/store/apps/details?id=bo.edu.usfx.sorteofranz&pcampaignid=web_share" target="_blank" class="btn-app">
-                <i class="fa-brands fa-google-play"></i> Descargar app
-        </a>
+         <a href="/ra/index.html" class="btn-app"><i class="fa-solid fa-mobile-screen-button" style="margin-right: 8px;"></i>Abrir Experiencia RA</a>
+
+        
     </div>
 
     
