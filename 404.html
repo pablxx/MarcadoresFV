@@ -167,7 +167,7 @@
   <p id="kicker" class="kicker">Franz Vice #SanFra</p>
   <h1 id="title" class="title">Franz Vice #SanFra</h1>
   <p id="copy" class="copy"></p>
-  
+
 
   <div id="codeWrap" class="code-box" hidden>
     <div class="code-label">CÓDIGO</div>
@@ -483,6 +483,11 @@
       }
       if (route === 'c' || route === 'checkin') {
         checkInPage();
+        return;
+      }
+
+      if (route === 'plan-trabajo') {
+        window.location.replace('/plan-trabajo.html');
         return;
       }
       notFoundPage();
