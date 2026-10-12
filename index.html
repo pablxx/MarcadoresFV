@@ -103,90 +103,94 @@
             background-color: #000000;
         }
 
-      .btn-gradient {
-    position: relative; 
-    overflow: hidden; 
-    display: inline-flex; 
-    align-items: center;
-    justify-content: center;
-    padding: 15px 35px;
-    background: linear-gradient(135deg, #1351a7 0%, #e50505 80%);
-    color: #ffffff;
-    font-size: 1.15rem;
-    font-weight: 700;
-    text-decoration: none;
-    border-radius: 30px;
-    box-shadow: 0 4px 15px rgba(27, 54, 93, 0.3);
-    transition: all 0.3s ease;
-    margin-bottom: 10px;
-    animation: pulse-glow 2.5s infinite; 
-    max-width: 240px;
-    gap: 10px;
-    }
-
-    .btn-gradient::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 50%;
-        height: 100%;
-        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
-        transform: skewX(-25deg);
-        animation: shine 3s infinite;
-        
-    }
-
-    .btn-gradient:hover {
-        transform: translateY(-3px) scale(1.02); 
-        box-shadow: -6px 12px 20px rgba(27, 54, 93, 0.35), 
-                    6px 12px 20px rgba(227, 0, 15, 0.35);
-        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    }
-
-    @keyframes pulse-glow {
-        0% { box-shadow: 0 0 0 0 rgba(254, 0, 0, 0.5); }
-        70% { box-shadow: 0 0 0 15px rgba(227, 5, 5, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(227, 5, 5, 0); }
-    }
-
-    @keyframes shine {
-        0% { left: -100%; }
-        20% { left: 200%; } 
-        100% { left: 200%; }
-    }
-
-        .btn-app {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px; 
-            padding: 12px 10px;
-            background-color: #1351a7; 
-            color: #ffffff;
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 30px;
-            box-shadow: 0 4px 12px rgba(19, 81, 167, 0.25);
-            transition: all 0.3s ease;
-            width: 100%;
-            max-width: 240px;
-        }
-
-        
-
         .action-buttons {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
             align-items: center;
             width: 100%;
+            max-width: 280px;
+        }
+
+        .action-buttons a {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            width: 100%;
+            height: 52px;
+            padding: 0 22px;
+            color: #ffffff;
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1;
+            text-decoration: none;
+            border-radius: 30px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 12px rgba(19, 81, 167, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .action-buttons a i {
+            width: 1.35em;
+            flex-shrink: 0;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .btn-gradient {
+            overflow: hidden;
+            background: linear-gradient(135deg, #1351a7 0%, #e50505 80%);
+        }
+
+        .btn-gradient::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            box-shadow: 0 0 0 0 rgba(254, 0, 0, 0.45);
+            animation: pulse-glow 2.5s infinite;
+            pointer-events: none;
+        }
+
+        .btn-gradient::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-25deg);
+            animation: shine 3s infinite;
+            pointer-events: none;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(19, 81, 167, 0.35);
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(254, 0, 0, 0.45); }
+            70% { box-shadow: 0 0 0 12px rgba(227, 5, 5, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(227, 5, 5, 0); }
+        }
+
+        @keyframes shine {
+            0% { left: -100%; }
+            20% { left: 200%; }
+            100% { left: 200%; }
+        }
+
+        .btn-app {
+            background-color: #1351a7;
         }
 
         .btn-app:hover {
             transform: translateY(-3px);
-            background-color: #0e3c7a; 
+            background-color: #0e3c7a;
             box-shadow: 0 6px 16px rgba(19, 81, 167, 0.35);
         }
         
@@ -222,13 +226,15 @@
     </div>
 
     <div class="action-buttons">
-        <h2 class="social-title-sm">¡Descarga la aplicación y podrás ganar grandes premios!</h2>
-        <a href="https://play.google.com/store/apps/details?id=bo.edu.usfx.sorteofranz&pcampaignid=web_share" target="_blank" class="btn-gradient">
-                <i class="fa-brands fa-google-play"></i>   Descargar app </a>
+        <a href="plan-trabajo.html" class="btn-gradient">
+            <i class="fa-solid fa-file-lines"></i> Plan de trabajo
+        </a>
 
-         <a href="/ra/index.html" class="btn-app"><i class="fa-solid fa-mobile-screen-button" style="margin-right: 8px;"></i>Abrir Experiencia RA</a>
+        <a href="/app/" class="btn-app">
+            <i class="fa-solid fa-download"></i> Descargar app
+        </a>
 
-        
+        <a href="/ra/index.html" class="btn-app"><i class="fa-solid fa-mobile-screen-button"></i>Abrir Experiencia RA</a>
     </div>
 
     
