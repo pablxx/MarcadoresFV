@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 233,
+    "left": 0,
+    "width": 1000,
+    "height": 1333,
+    "isRotated": false,
+    "originalWidth": 1000,
+    "originalHeight": 1800
+  },
+  "imagePath": "image-targets/markFoto_luminance.png",
+  "metadata": null,
+  "name": "markFoto",
+  "resources": {
+    "originalImage": "markFoto_original.png",
+    "croppedImage": "markFoto_cropped.png",
+    "thumbnailImage": "markFoto_thumbnail.png",
+    "luminanceImage": "markFoto_luminance.png"
+  },
+  "created": 1792606395583,
+  "updated": 1792606395583
+}
